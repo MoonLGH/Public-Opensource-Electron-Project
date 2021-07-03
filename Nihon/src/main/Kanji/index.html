@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Kanji Reader</title>
+    <link rel="stylesheet" href="index.css">
+  </head>
+  <body>
+    <center>
+  <!-- text -->
+   <div style= "position:relative; top:40px;"class="Text">Kanji Reader</div>
+   <!-- page mover -->
+   <!-- Back to the hub -->
+<button onclick="document.location='../index.html'" style = "position:absolute; top:10px; left:10px" class="Buttons" >Main Menu</button>
+<!-- List -->
+
+
+</center>
+<center>
+  <button onclick="window.location.reload();" class="Buttonin" style = "position:relative; top:100px;">Clear</button>
+  <input id="kanjiafb" class="Buttonin" style = "position:relative; top:100px; " placeholder="Enter Your Kanji">
+  <button onclick="getkanji()" class="Buttonin" style = "position:relative; top:100px;">Convert</button>
+  <div style= "position:relative; top:125px;"class="Text1">Result</div>
+  
+  
+
+<div class="goog-trans-section" style= "position:relative; width: 50%;  top:140px;">
+    <div class="goog-trans-control"><div class="skiptranslate goog-te-sectional-gadget-link"><div id=":0.gadgetLink"><div class="text">Kun Yomi</div></a></div></div></div>
+    <div class="japanese" id="kun"></div>
+    <div class="clear"></div>
+</div>
+
+<div class="goog-trans-section" style= "position:relative; width: 50%;  top:140px;">
+  <div class="goog-trans-control"><div class="skiptranslate goog-te-sectional-gadget-link"><div id=":0.gadgetLink"><div class="text">On Yomi</div></a></div></div></div>
+  <div class="japanese" id="on"></div>
+  <div class="clear"></div>
+</div>
+
+
+<div class="goog-trans-section" style= "position:relative; width: 50%;  top:140px;">
+    <div class="goog-trans-control"><div class="skiptranslate goog-te-sectional-gadget-link"><div id=":0.gadgetLink"><div class="text">Nanori</div></a></div></div></div>
+    <div class="japanese" id="nanori"></div>
+    <div class="clear"></div>
+</div>
+
+<div class="goog-trans-section" style= "position:relative; width: 50%;  top:140px;">
+  <div class="goog-trans-control"><div class="skiptranslate goog-te-sectional-gadget-link"><div id=":0.gadgetLink"><div class="text">Meaning</div></a></div></div></div>
+  <div class="japanese" id="mean"></div>
+  <div class="clear"></div>
+</div>
+<!-- <button onclick="openwin();" class="Buttonin" style = "position:relative; top:100px;">Clear</button> -->
+
+<div class="goog-trans-section" style= "position:relative; width: 50%;  top:140px;">
+  <div class="goog-trans-control"><div class="skiptranslate goog-te-sectional-gadget-link"><div id=":0.gadgetLink"><div class="text">Jlpt Level</div></a></div></div></div>
+  <div class="japanese" id="jlpt"></div>
+  <div class="clear"></div>
+</div>
+
+<div class="goog-trans-section" style= "position:relative; width: 50%;  top:140px;">
+  <div class="goog-trans-control"><div class="skiptranslate goog-te-sectional-gadget-link"><div id=":0.gadgetLink"><div class="text">Newspaper Frequency Rank</div></a></div></div></div>
+  <div class="japanese" id="nfr"></div>
+  <div class="clear"></div>
+</div>
+
+</center>
+  </body>
+  <script></script>
+  <script src="./converter.js"></script>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Hiragana Quiz</title>
+    <link rel="stylesheet" href="../../index.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="../../bootstrap.min.css">
+    <link rel="stylesheet" href="../../animate.min.css">
+    <link rel="stylesheet" href="../../assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i">
+    <link rel="stylesheet" href="../../assets/fonts/fontawesome-all.min.css">
+  </head>
+  <body id="page-top" >
+    <div id="wrapper">
+        <nav class="navbar navbar-dark align-items-start sidebar sidebar-dark accordion bg-gradient-primary p-0 toggled" >
+            <div class="container-fluid d-flex flex-column p-0" style="position: relative; top: 25px" >
+                <a class="navbar-brand d-flex justify-content-center align-items-center sidebar-brand m-0" href="#">
+                    <div class="sidebar-brand-icon">
+                      <img src="../../../favicon.ico" width="64px">
+                    </div>
+                    <div class="sidebar-brand-text mx-3"><span>Nihon</span></div>
+                </a>
+                <hr class="sidebar-divider my-0">
+                <ul class="nav navbar-nav text-light" style="position: relative; top: 10px" id="accordionSidebar">
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="../../index.html"><img src="../../assets/img/mainmenu.png" width="64px"><span> Main Menu</span></a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="../../KanaConv/RTK.html"><img src="../../assets/img/kanaconv.png" width="64px"><span> Kana Converter</span></a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link active" href="../../Hiragana/index.html"><img src="../../assets/img/hira.png" width="64px"><span> Hiragana</span></a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="../../Katakana/index.html"><img src="../../assets/img/kata.png" width="64px"><span> Katakana</span></a></li>
+                    <li class="nav-item" role="precv sentation"><a class="nav-link" href=""><img src="../../assets/img/kanji.png" width="64px"><span> Kanji</span></a></li>
+                    <li class="nav-item" role="precv sentation"><a class="nav-link" href=""><img src="../../assets/img/about.png" width="64px"><span> About App</span></a></li>
+                </ul>
+                <div class="text-center d-none d-md-inline "  style="position: relative; top: 25px"><button class="btn rounded-circle border-0" id="sidebarToggle" type="button"></button></div>
+            </div>
+        </nav>
+        <div class="d-flex-column text-center" id="content-wrapper">
+            <div  style="position: relative; top: 100px">
+            <h1>Hiragana Quiz</h1>
+            <h1>Guess The Character</h1>
+            <center>
+            <div class="box" style="width: 200px; height: 100px;"id="Hira"></div>
+            </center>
+            <input id="WIT"  style="position: relative; top: 25px" class="Buttonin" placeholder="What Is that">
+            <button onclick="answer()"  style="position: relative; top: 25px" class="Buttonin" id="cm" >Correct me</button>
+<h1 id="err"></h1>
+
+<center>
+            <table border="5"  style= "position:relative; top:50px; width: 50%;" class="table text-center">
+          
+              <tr>
+                <th class="ca">Correct Answer</th>
+                <th class="ca">Wrong Answer</th>
+              </tr>
+          
+              <tr>
+                <th id="ca" class="ca">0</th>
+                <th id="wa"class="ca">0</th>
+              </tr>
+            </table>
+          </center>
+          </div>
+        </div>
+        </div>
+          </body>
+
+<script src="./index.js"></script>
+<script src="./script.js"></script>
+
+<script>window.$ = window.jQuery = require('jquery');</script>  
+<script src="../../assets/bootstrap/js/bootstrap.min.js"></script>
+<script src="../../assets/js/jquery.easing.js"></script>
+<script src="../../assets/js/theme.js"></script>
+
+</html>
